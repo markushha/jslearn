@@ -1,0 +1,18 @@
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Noto Sans', sans-serif;
+    background-image: linear-gradient(to right, #c1f4d5, #abefdb, #97e9e3, #87e1eb, #7ed9f2);
+}
+
+.container {
+    width: 1440px;
+    justify-content: center;
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.info {
+    margin-top: 15px;
+    letter-spacing: 0.03em;
+}

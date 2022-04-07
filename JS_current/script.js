@@ -31,6 +31,8 @@ if (personalMovieDB.count < 10) {
     console.log('Вы классический зритель')
 } else if (personalMovieDB.count > 30) {
     console.log('Вы киноман')
+} else {
+    console.log('error')
 }
 
 for (let i = 0; i < 2; i++) {
@@ -40,12 +42,10 @@ for (let i = 0; i < 2; i++) {
     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
         personalMovieDB.movies[a] = b; 
         console.log('done');
+    } else {
+        console.log('error');
+        i--;
     }
 }
 
-console.log(personalMovieDB);
-
-
-
-
-
+console.log(personalMovieDB); 
