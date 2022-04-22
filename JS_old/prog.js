@@ -1,33 +1,11 @@
 'use strict';
 
-let a = +prompt('Enter first N')
-let b = +prompt('Enter second N')
-let c = prompt('Select operation ( * , / , + , - )')
+let firstName = prompt('Enter your first name.', '');
+let lastName = prompt('Enter your last name.', '');
 
-function sum(a, b) {
-    return (a + b)
-}
-
-function deduct(a, b) {
-    return (a - b)
-}
-
-function multiply(a, b) {
-    return (a * b)
-}
-
-function divide(a, b) {
-    return (a / b)
-}
-
-if (c == '/') {
-    divide(a, b);
-} else if (c == '*') {
-    multiply(a, b);
-} else if (c == '-') {
-    debuct(a, b);
-} else if (c == '+') {
-    sum(a, b);
+if (firstName != null && firstName != '' && firstName.length > 1 && firstName.length < 16 && lastName != null && lastName.length > 1 && lastName.length < 16 && lastName != '') {
+    console.log(`${firstName} ${lastName}`)
 } else {
-    console.log('Error');
+    console.log('please try again :3')
 }
+
